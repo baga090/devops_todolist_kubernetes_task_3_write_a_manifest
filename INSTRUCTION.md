@@ -1,5 +1,10 @@
 # ToDo App Kubernetes Deployment
 
+## 0. Build and push Docker image
+```bash
+docker build -t baga56789/todoapp:3.0.0 .
+docker push baga56789/todoapp:3.0.0
+
 ## 1. How to apply manifests
 kubectl apply -f .infrastructure/namespace.yml
 kubectl apply -f .infrastructure/todoapp-pod.yml
